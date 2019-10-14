@@ -9,7 +9,7 @@ app.config.from_object('settings')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/mywebsite'
 db = SQLAlchemy(app)
 
-//Class for contacts
+//Class for contacts with details
 
 class Contacts(db.Model):
     '''
