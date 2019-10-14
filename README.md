@@ -1,2 +1,2 @@
 # yeno_app
-Functioning with Flask. 
+Functioning of the app with Flask framework. 
