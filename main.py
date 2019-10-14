@@ -5,10 +5,11 @@ from app import db
 
 app = Flask(__name__)
 app.config.from_object('settings')
-
+//connecting to database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/mywebsite'
 db = SQLAlchemy(app)
 
+//Class for contacts with details
 
 class Contacts(db.Model):
     '''
@@ -33,7 +34,7 @@ def about():
 def contact():
     if request.method == 'POST':
 
-        '''adding entry to the database'''
+     // '''adding entry to the database'''
         name = request.form.get('name')
         email = request.form.get('email')
         phone = request.form.get('phone')
