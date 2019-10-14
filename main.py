@@ -34,7 +34,7 @@ def about():
 def contact():
     if request.method == 'POST':
 
-        '''adding entry to the database'''
+     // '''adding entry to the database'''
         name = request.form.get('name')
         email = request.form.get('email')
         phone = request.form.get('phone')
