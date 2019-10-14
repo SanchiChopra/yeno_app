@@ -5,10 +5,11 @@ from app import db
 
 app = Flask(__name__)
 app.config.from_object('settings')
-
+//connecting to database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/mywebsite'
 db = SQLAlchemy(app)
 
+//Class for contacts
 
 class Contacts(db.Model):
     '''
